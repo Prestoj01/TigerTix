@@ -1,0 +1,20 @@
+to run: 
+
+dotnet run
+
+run with instant changes:
+
+dotnet watch run
+
+if address in use error:
+
+kill pid
+
+use ctrl C to kill 
+
+
+To view database type into terminal:
+sqlite3 UserData.db
+
+if you want to see all users for ex type: 
+SELECT * FROM Users;

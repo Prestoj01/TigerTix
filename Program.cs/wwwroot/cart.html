@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">  <!-- Ensure you have cart.css or link existing CSS -->
+</head>
+<body>
+    <header>
+        <h1>Cart</h1>
+    </header>
+    <nav>
+        <a href="/home">Back to Events</a>
+        <a href="/checkout.html">Checkout</a>
+    </nav>
+    <div id="cartContents"></div>
+
+    <div id="checkoutButton">
+        <button id="checkoutButton" style="display:none;" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+    <script>
+        function showCart() {
+            let cart = localStorage.getItem('cart');
+            if (cart) {
+                cart = JSON.parse(cart);
+                let content = '<ul>';
+                cart.forEach((item, index) => {
+                    content += `<li>${item.title} - Quantity: ${item.quantity} <button onclick="removeFromCart(${index})">Remove</button></li>`;
+                });
+                content += '</ul>';
+                document.getElementById('cartContents').innerHTML = content;
+            } else {
+                document.getElementById('cartContents').innerHTML = 'Your cart is empty';
+            }
+        }
+
+        function removeFromCart(index) {
+            let cart = localStorage.getItem('cart');
+            cart = JSON.parse(cart);
+            cart.splice(index, 1);  // Remove the item at the specified index
+            localStorage.setItem('cart', JSON.stringify(cart));
+            showCart();  // Refresh the cart display
+        }
+
+        function proceedToCheckout() {
+            window.location.href = '/checkout';
+        }
+
+        window.onload = showCart;
+    </script>
+</body>
+</html>

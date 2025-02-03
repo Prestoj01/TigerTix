@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="css/event.css">
+</head>
+<body>
+    <header>
+        <h1>Tiger Tix</h1>
+    </header>
+    <nav>
+        <a href="/cart.html">View Cart</a>
+        <a href="/home.html">Events</a>
+        <a href="/signout">Sign Out</a>
+    </nav>
+    <div class="container">
+        <div id="eventDetails">
+            <h2 id="eventTitle">Event Title</h2>
+            <p id="eventDate">Date: TBD</p>
+            <p id="eventLocation">Location: TBD</p>
+            <button onclick="buyTicket()">Buy Ticket</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+    <footer>
+        <p>Tiger Tix</p>
+    </footer>
+    <script src="events.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventId = urlParams.get('event');
+
+        const event = eventsData[eventId];
+
+        if (event) {
+            document.getElementById('eventTitle').innerText = event.title;
+            document.getElementById('eventDate').innerText = `Date: ${event.date}`;
+            document.getElementById('eventLocation').innerText = `Location: ${event.location}`;
+        } 
+        else {
+            document.getElementById('eventDetails').innerHTML = "<p>Event not found.</p>";
+        }
+
+        function buyTicket() {
+            const event = {
+            eventId: eventId,
+            title: document.getElementById('eventTitle').innerText,
+            date: document.getElementById('eventDate').innerText,
+            location: document.getElementById('eventLocation').innerText,
+            quantity: 1  // Default quantity to 1; adjust as necessary
+        };
+
+        let cart = localStorage.getItem('cart');
+        if (cart) {
+            cart = JSON.parse(cart);
+        } else {
+            cart = [];
+        }
+
+        // Check if the event is already in the cart
+        const index = cart.findIndex(item => item.eventId === eventId);
+        if (index > -1) {
+            cart[index].quantity += 1;  // Increase quantity if already in cart
+        } else {
+            cart.push(event);  // Add new event to cart
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`Tickets for ${event.title} are now in your cart!`);
+    }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

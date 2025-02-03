@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Event Ticketing Platform</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <h1>Tiger Tix</h1>
+    </header>
+    <nav>
+        <a href="/cart.html">View Cart</a>
+        <a href="/signout">Sign Out</a>
+    </nav>
+    <div class="container">
+        <h2>Available Events</h2>
+        <input type="text" id="searchCriteria" placeholder="Search events..." oninput="searchEvents()">
+        <select id="sortCriteria" onchange="sortEvents()">
+            <option value="location">Sort by Location</option>
+            <option value="date">Sort by Date</option>
+        </select>
+        <ul class="event-list" id="eventList">
+            <li>
+                <h3 class="event-title">Jack Johnson</h3>
+                <p class="event-date">Date: October 15, 2025</p>
+                <p>Location: Mercedes-Benz Stadium, Atlanta</p>
+                <a href="#" class="button" onclick="redirectToEventPage('jack-johnson')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Soccer vs Wofford</h3>
+                <p class="event-date">Date: October 29, 2024</p>
+                <p>Location: Historic Riggs Field</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-soccer-vs-wofford')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Soccer vs Virginia Tech</h3>
+                <p class="event-date">Date: November 1, 2024</p>
+                <p>Location: Historic Riggs Field</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-soccer-vs-virginia-tech')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs Virginia</h3>
+                <p class="event-date">Date: October 19, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-virginia')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs Virginia Tech</h3>
+                <p class="event-date">Date: November 9, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-virginia-tech')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs Citadel</h3>
+                <p class="event-date">Date: November 23, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-citadel')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs Louisville</h3>
+                <p class="event-date">Date: November 2, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-louisville')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs Pitt</h3>
+                <p class="event-date">Date: November 16, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-pitt')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Clemson Football vs South Carolina</h3>
+                <p class="event-date">Date: November 30, 2024</p>
+                <p>Location: Death Valley</p>
+                <a href="#" class="button" onclick="redirectToEventPage('clemson-football-vs-south-carolina')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">The Stews</h3>
+                <p class="event-date">Date: January 5, 2025</p>
+                <p>Location: Tiger Park</p>
+                <a href="#" class="button" onclick="redirectToEventPage('the-stews')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">The Fray</h3>
+                <p class="event-date">Date: December 13, 2024</p>
+                <p>Location: Tiger Park</p>
+                <a href="#" class="button" onclick="redirectToEventPage('the-fray')">Buy Tickets</a>
+            </li>
+            <li>
+                <h3 class="event-title">Mt. Joy</h3>
+                <p class="event-date">Date: February 22, 2025</p>
+                <p>Location: Charleston, Sc</p>
+                <a href="#" class="button" onclick="redirectToEventPage('mt-joy')">Buy Tickets</a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>Tiger Tix</p>
+    </footer>
+    <script src="/search.js"></script>
+    <script src="/sort.js"></script>
+    <script>
+        function redirectToEventPage(eventId) {
+            window.location.href = `/event.html?event=${eventId}`;
+        }
+    </script>
+</body>
+</html>

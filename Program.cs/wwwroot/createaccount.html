@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="css/createaccount.css">
+</head>
+<body>
+    <header>
+        <h1>Tiger Tix</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/signin.html">Sign In</a>
+        <a href="/createaccount.html">Create an Account</a>
+        <a href="/help.html">Help Page</a>
+    </nav>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form method="post" action="/createaccount">
+            <label>Username:
+                <input type="text" name="username" required>
+            </label>
+            <label>CUID:
+                <input type="text" name="cuid">
+            </label>
+            <label>Password:
+                <input type="password" name="password" required>
+            </label>
+            <label>Confirm Password:
+                <input type="password" name="confirmpassword" required>
+            </label>
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+    <footer>
+        <p> Tiger Tix</p>
+    </footer>
+</body>
+</html>
