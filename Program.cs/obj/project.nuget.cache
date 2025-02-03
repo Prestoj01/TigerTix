@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K9Rk9rfEHHc=",
+  "dgSpecHash": "0Rp3O3TcEzU=",
   "success": true,
-  "projectFilePath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/Program.cs.csproj",
+  "projectFilePath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/Program.cs.csproj",
   "expectedPackageFiles": [
     "/Users/prestonjohnson/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/prestonjohnson/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

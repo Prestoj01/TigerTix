@@ -1533,11 +1533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/Program.cs.csproj",
+      "projectUniqueName": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/Program.cs.csproj",
       "projectName": "Program.cs",
-      "projectPath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/Program.cs.csproj",
+      "projectPath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/Program.cs.csproj",
       "packagesPath": "/Users/prestonjohnson/.nuget/packages/",
-      "outputPath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/obj/",
+      "outputPath": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/prestonjohnson/.nuget/NuGet/NuGet.Config"

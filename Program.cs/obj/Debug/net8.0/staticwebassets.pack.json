@@ -1,87 +1,87 @@
 {
   "Files": [
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/cart.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/cart.html",
       "PackagePath": "staticwebassets/cart.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/checkout.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/checkout.html",
       "PackagePath": "staticwebassets/checkout.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/confirmation.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/confirmation.html",
       "PackagePath": "staticwebassets/confirmation.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/createaccount.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/createaccount.html",
       "PackagePath": "staticwebassets/createaccount.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/cart.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/cart.css",
       "PackagePath": "staticwebassets/css/cart.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/checkout.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/checkout.css",
       "PackagePath": "staticwebassets/css/checkout.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/createaccount.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/createaccount.css",
       "PackagePath": "staticwebassets/css/createaccount.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/event.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/event.css",
       "PackagePath": "staticwebassets/css/event.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/help.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/help.css",
       "PackagePath": "staticwebassets/css/help.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/home.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/home.css",
       "PackagePath": "staticwebassets/css/home.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/index.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/index.css",
       "PackagePath": "staticwebassets/css/index.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/css/signin.css",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/css/signin.css",
       "PackagePath": "staticwebassets/css/signin.css"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/event.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/event.html",
       "PackagePath": "staticwebassets/event.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/events.js",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/events.js",
       "PackagePath": "staticwebassets/events.js"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/help.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/help.html",
       "PackagePath": "staticwebassets/help.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/home.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/home.html",
       "PackagePath": "staticwebassets/home.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/images/background.jpeg",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/images/background.jpeg",
       "PackagePath": "staticwebassets/images/background.jpeg"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/index.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/search.js",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/search.js",
       "PackagePath": "staticwebassets/search.js"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/signin.html",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/signin.html",
       "PackagePath": "staticwebassets/signin.html"
     },
     {
-      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/LAB1/Program.cs/wwwroot/sort.js",
+      "Id": "/Users/prestonjohnson/Documents/Fall 2024 Classes/CPSC 3720/Project/TigerTix/Program.cs/wwwroot/sort.js",
       "PackagePath": "staticwebassets/sort.js"
     },
     {
