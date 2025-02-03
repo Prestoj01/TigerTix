@@ -1,0 +1,202 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: TigerTix API
+  description: An API to illustrate OpenAPI concepts in TigerTix
+
+servers:
+  - url: http://api.tigertix.com
+
+paths:
+  /createAccount:
+    post:
+      summary: Create a new account for the user
+      url: http://api.tigertix.com/createaccount.html
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createAccount'
+            example:
+              username: "john_doe"
+              password: "password"
+              CUID: "C12345678"
+  responses:
+    '200':
+      description: Succesfully created account
+      content:
+            application/json:
+            example:
+              success: "Account successfully created"
+
+    '400':
+      description: Bad Request
+      content:
+            application/json:
+            example:
+              error: "Invalid Input"
+    
+    '500':
+      description: Internal Server Error
+      content:
+            application/json:
+            example:
+              error: "Unable to process request. Please try agin later"
+
+  /login:
+    post:
+      summary: Log into an existing account
+      url: http://api.tigertix.com/signin.html
+      requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LogIn'
+          example:
+            username: "john-doe"
+            passsword: "password"
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              example:
+                success: "Login Successful"
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              example:
+                error: "Invalid Input"
+    
+          '500':
+            description: Internal Server Error
+            content:
+              application/json:
+                example:
+                  error: "Unable to process login. Please try agin later"
+
+    /events:
+      get:
+        summary: Get a list of all available events
+        url: http://api.tigertix.com/home
+        parameters:
+       
+        - $ref: '#/components/parameters/PageLimit'
+        - $ref: '#/components/parameters/PageOffset'
+
+        responses:
+          '200':
+            description: Successfully returned a list of available events
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Event'
+                  example:
+                    id: "1"
+                    title: "Mt. Joy"
+                    date: "February 22, 2025"
+                    location: "Charleston, Sc"
+                    id: "2"
+                    title: "Clemson Football vs Virginia"
+                    date: "October 19, 2024"
+                    location: "Death Valley"
+          
+          '500':
+            description: Internal Server Error
+            content:
+              application/json:
+                example:
+                  error: "Unable to retrive events. Please try again later."
+
+components:
+  schemas:
+    CreateAccount:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+          description: user's unique username
+        cuid:
+          type: string
+          description: user's student id
+        password:
+          type: string
+          description: user's password for account
+    
+    LogIn:
+      type: object
+        required:
+         - username
+         - password
+        properties:
+          username:
+            type: string
+            description: user's unique username
+          password:
+            type: string
+            description: user's password for account
+
+    Event:
+    type: object
+      properties:
+        id:
+          type: string
+          description: event identifier
+        title:
+          type: string
+          description: name of event
+        date:
+          type: string
+          description: date of the event
+        location:
+          type: string
+          description: location of event
+        
+
+  parameters:
+    PageLimit:
+      name: limit
+      in: query
+      description: Limits the number of items on a page
+      schema:
+        type: integer
+      
+    PageOffset:
+      name: offset
+      in: query
+      description: Specifies the page number of the events to be displayed
+      schema:
+        type: integer
+
+  responses:
+    400Error:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            type: object 
+            properties:
+              message:
+                type: string
+    500Error:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            type: object 
+            properties:
+              message:
+                type: string
+
+
+
+
+      
